@@ -1,0 +1,238 @@
+<zones>
+	<zone name="NG">
+		<environment name="DEV_QA" script-job-path="/NG_Template/DEV_QA" master-batch-job="CreateMasterBatchJob_DEV_QA" child-batch-job="CreateChildBatchJob_DEV_QA">
+				<patch-slot name="NG_Sun_1900" week="week1">
+					<patch-job week="week1" os="RH7" child-source-job="/NG_Template/DEV_QA/RHEL7/RHEL_7_GROUPA" master-source-job="/NG_Template/DEV_QA/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/DEV_QA/RHEL7/Week1/NG_Sun_1900" clone="true" clone-job="RHEL_7_GROUPB">NG_RH7_Sun_1900</patch-job>
+					<server-group-name>/NG/DEV_QA/RHEL7/GROUP_A/NG_Sun_1900;/NG/DEV_QA/RHEL7/GROUP_B/NG_Sun_1900</server-group-name>																
+					<master-cme-path>/NG_Runs/DEV_QA/RHEL7/Week1/NG_Sun_1900/RHEL_7_GROUPA,/NG_Runs/DEV_QA/RHEL7/Week1/NG_Sun_1900/RHEL_7_GroupB</master-cme-path>
+					<schedule-start-day>Sun</schedule-start-day>
+					<schedule-start-time>19:00:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment DEV_QA_1900</comments>
+				</patch-slot>
+		</environment>
+		<environment name="CERT_NR" script-job-path="/NG_Template/CERT_NR" master-batch-job="CreateMasterBatchJob_CERT_NR" child-batch-job="CreateChildBatchJob_CERT_NR">
+				<patch-slot name="NG_Fri_2300" week="week2">
+					<patch-job week="week2" os="RH7" child-source-job="/NG_Template/CERT_NR/RHEL7/RHEL_7_GROUPA" master-source-job="/NG_Template/CERT_NR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/CERT_NR/RHEL7/Week2/NG_Fri_2300" clone="true" clone-job="RHEL_7_GROUPB">NG_RH7_Fri_2300</patch-job>
+					<server-group-name>/NG/CERT_NR/RHEL7/GROUP_A/NG_Fri_2300;/NG/CERT_NR/RHEL7/GROUP_B/NG_Fri_2300</server-group-name>
+					<master-cme-path>/NG_Runs/CERT_NR/RHEL7/Week2/NG_Fri_2300/RHEL_7_GROUPA,/NG_Runs/CERT_NR/RHEL7/Week2/NG_Fri_2300/RHEL_7_GroupB</master-cme-path>
+					<schedule-start-day>Fri</schedule-start-day>
+					<schedule-start-time>23:00:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_2300</comments>
+				</patch-slot>
+				<patch-slot name="NG_Sat_0200_A" week="week2">
+					<patch-job week="week2" os="RH7" child-source-job="/NG_Template/CERT_NR/RHEL7/RHEL_7_GROUPA" master-source-job="/NG_Template/CERT_NR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/CERT_NR/RHEL7/Week2/NG_Sat_0200_A" clone="true" clone-job="RHEL_7_GROUPB">NG_RH7_Sat_0200_A</patch-job>
+					<server-group-name>/NG/CERT_NR/RHEL7/GROUP_A/NG_Sat_0200_A;/NG/CERT_NR/RHEL7/GROUP_B/NG_Sat_0200_A</server-group-name>
+					<master-cme-path>/NG_Runs/CERT_NR/RHEL7/Week2/NG_Sat_0200_A/RHEL_7_GROUPA,/NG_Runs/CERT_NR/RHEL7/Week2/NG_Sat_0200_A/RHEL_7_GroupB</master-cme-path>
+					<schedule-start-day>Sat</schedule-start-day>
+					<schedule-start-time>02:00:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_0200_A</comments>
+				</patch-slot>
+				<patch-slot name="NG_Sat_0800" week="week2">
+					<patch-job week="week2" os="RH7" child-source-job="/NG_Template/CERT_NR/RHEL7/RHEL_7_GROUPA" master-source-job="/NG_Template/CERT_NR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/CERT_NR/RHEL7/Week2/NG_Sat_0800" clone="true" clone-job="RHEL_7_GROUPB">NG_RH7_Sat_0800</patch-job>
+					<server-group-name>/NG/CERT_NR/RHEL7/GROUP_A/NG_Sat_0800;/NG/CERT_NR/RHEL7/GROUP_B/NG_Sat_0800</server-group-name>
+					<master-cme-path>/NG_Runs/CERT_NR/RHEL7/Week2/NG_Sat_0800/RHEL_7_GROUPA,/NG_Runs/CERT_NR/RHEL7/Week2/NG_Sat_0800/RHEL_7_GroupB</master-cme-path>
+					<schedule-start-day>Sat</schedule-start-day>
+					<schedule-start-time>08:00:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_0800</comments>
+				</patch-slot>
+		</environment>
+		<environment name="PROD_DR" script-job-path="/NG_Template/PROD_DR" master-batch-job="CreateMasterBatchJob_PROD_DR" child-batch-job="CreateChildBatchJob_PROD_DR">
+				<patch-slot name="NG_Fri_1430" week="week3">
+					<patch-job week="week3" os="RH7" child-source-job="/NG_Template/PROD_DR/RHEL7/RHEL_7" master-source-job="/NG_Template/PROD_DR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/PROD_DR/RHEL7/Week3/NG_Fri_1430" clone="false">NG_RH7_Fri_1430</patch-job>
+												
+					<!-- Do we need GROUP_A & GROUP_B in PROD_DR ? -->
+					<server-group-name>/NG/PROD_DR/RHEL7/GROUP_A/NG_Fri_1430</server-group-name>
+					<master-cme-path>/NG_Runs/PROD_DR/RHEL7/Week3/NG_Fri_1430/RHEL_7</master-cme-path>
+					<schedule-start-day>Fri</schedule-start-day>
+					<schedule-start-time>14:30:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_1430</comments>
+				</patch-slot>
+				<patch-slot name="NG_Fri_2300" week="week3">
+					<patch-job week="week3" os="RH7" child-source-job="/NG_Template/PROD_DR/RHEL7/RHEL_7" master-source-job="/NG_Template/PROD_DR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/PROD_DR/RHEL7/Week3/NG_Fri_2300" clone="false">NG_RH7_Fri_2300</patch-job>
+					<server-group-name>/NG/PROD_DR/RHEL7/GROUP_A/NG_Fri_2300</server-group-name>
+					<master-cme-path>/NG_Runs/PROD_DR/RHEL7/Week3/NG_Fri_2300/RHEL_7</master-cme-path>
+					<schedule-start-day>Fri</schedule-start-day>
+					<schedule-start-time>23:00:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_2300</comments>
+				</patch-slot>
+				<patch-slot name="NG_Sat_0200_A" week="week3">
+					<patch-job week="week3" os="RH7" child-source-job="/NG_Template/PROD_DR/RHEL7/RHEL_7" master-source-job="/NG_Template/PROD_DR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/PROD_DR/RHEL7/Week3/NG_Sat_0200_A" clone="false">NG_RH7_Sat_0200_A</patch-job>
+					<server-group-name>/NG/PROD_DR/RHEL7/GROUP_A/NG_Sat_0200_A</server-group-name>
+					<master-cme-path>/NG_Runs/PROD_DR/RHEL7/Week3/NG_Sat_0200_A/RHEL_7</master-cme-path>
+					<schedule-start-day>Sat</schedule-start-day>
+					<schedule-start-time>02:00:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_0200</comments>
+				</patch-slot>
+				<patch-slot name="NG_Sat_0300_A_D" week="week3">
+					<patch-job week="week3" os="RH7" child-source-job="/NG_Template/PROD_DR/RHEL7/RHEL_7" master-source-job="/NG_Template/PROD_DR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/PROD_DR/RHEL7/Week3/NG_Sat_0300_A_D" clone="false">NG_RH7_Sat_0300_A/D</patch-job>
+					<!-- Server group name contains "/". Need to rename it as NG_Sat_0300_A/D -->
+					<server-group-name>/NG/PROD_DR/RHEL7/GROUP_A/NG_Sat_0300_A_D</server-group-name>
+					<master-cme-path>/NG_Runs/PROD_DR/RHEL7/Week3/NG_Sat_0300_A_D/RHEL_7</master-cme-path>
+					<schedule-start-day>Sat</schedule-start-day>
+					<schedule-start-time>03:00:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_0300AD</comments>
+				</patch-slot>
+				<patch-slot name="NG_Sat_0800_A" week="week3">
+					<patch-job week="week3" os="RH7" child-source-job="/NG_Template/PROD_DR/RHEL7/RHEL_7" master-source-job="/NG_Template/PROD_DR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/PROD_DR/RHEL7/Week3/NG_Sat_0800_A" clone="false">NG_RH7_Sat_0800_A</patch-job>
+					<server-group-name>/NG/PROD_DR/RHEL7/GROUP_A/NG_Sat_0800_A</server-group-name>
+					<master-cme-path>/NG_Runs/PROD_DR/RHEL7/Week3/NG_Sat_0800_A/RHEL_7</master-cme-path>
+					<schedule-start-day>Sat</schedule-start-day>
+					<schedule-start-time>08:00:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_0800A</comments>
+				</patch-slot>
+				<patch-slot name="NG_Fri_1430" week="week4">
+					<patch-job week="week4" os="RH7" child-source-job="/NG_Template/PROD_DR/RHEL7/RHEL_7" master-source-job="/NG_Template/PROD_DR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/PROD_DR/RHEL7/Week4/NG_Fri_1430" clone="false">NG_RH7_Fri_1430</patch-job>
+					<server-group-name>/NG/PROD_DR/RHEL7/GROUP_B/NG_Fri_1430</server-group-name>
+					<master-cme-path>/NG_Runs/PROD_DR/RHEL7/Week4/NG_Fri_1430/RHEL_7</master-cme-path>
+					<schedule-start-day>Fri</schedule-start-day>
+					<schedule-start-time>14:30:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_1430</comments>
+				</patch-slot>
+				<patch-slot name="NG_Fri_2300" week="week4">
+					<patch-job week="week4" os="RH7" child-source-job="/NG_Template/PROD_DR/RHEL7/RHEL_7" master-source-job="/NG_Template/PROD_DR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/PROD_DR/RHEL7/Week4/NG_Fri_2300" clone="false">NG_RH7_Fri_2300</patch-job>
+					<server-group-name>/NG/PROD_DR/RHEL7/GROUP_B/NG_Fri_2300</server-group-name>
+					<master-cme-path>/NG_Runs/PROD_DR/RHEL7/Week4/NG_Fri_2300/RHEL_7</master-cme-path>
+					<schedule-start-day>Fri</schedule-start-day>
+					<schedule-start-time>23:00:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_2300</comments>
+				</patch-slot>
+				<patch-slot name="NG_Sat_0200_A" week="week4">
+					<patch-job week="week4" os="RH7" child-source-job="/NG_Template/PROD_DR/RHEL7/RHEL_7" master-source-job="/NG_Template/PROD_DR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/PROD_DR/RHEL7/Week4/NG_Sat_0200_A" clone="false">NG_RH7_Sat_0200_A</patch-job>
+					<server-group-name>/NG/PROD_DR/RHEL7/GROUP_B/NG_Sat_0200_A</server-group-name>
+					<master-cme-path>/NG_Runs/PROD_DR/RHEL7/Week4/NG_Sat_0200_A/RHEL_7</master-cme-path>
+					<schedule-start-day>Sat</schedule-start-day>
+					<schedule-start-time>02:00:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_0200_A</comments>
+				</patch-slot>
+				<patch-slot name="NG_Sat_0300_A_D" week="week4">
+					<patch-job week="week4" os="RH7" child-source-job="/NG_Template/PROD_DR/RHEL7/RHEL_7" master-source-job="/NG_Template/PROD_DR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/PROD_DR/RHEL7/Week4/NG_Sat_0300_A_D" clone="false">NG_RH7_Sat_0300_A/D</patch-job>
+					<!-- Server group name contains "/". Need to rename it as NG_Sat_0300_A/D -->
+					<server-group-name>/NG/PROD_DR/RHEL7/GROUP_B/NG_Sat_0300_A_D</server-group-name>
+					<master-cme-path>/NG_Runs/PROD_DR/RHEL7/Week4/NG_Sat_0300_A_D/RHEL_7</master-cme-path>
+					<schedule-start-day>Sat</schedule-start-day>
+					<schedule-start-time>03:00:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_0300AD</comments>
+				</patch-slot>
+				<patch-slot name="NG_Sat_0800_A" week="week4">
+					<patch-job week="week4" os="RH7" child-source-job="/NG_Template/PROD_DR/RHEL7/RHEL_7" master-source-job="/NG_Template/PROD_DR/RHEL7/NG_RHEL_7" dest-folder="/NG_Runs/PROD_DR/RHEL7/Week4/NG_Sat_0800_A" clone="false">NG_RH7_Sat_0800_A</patch-job>
+					<server-group-name>/NG/PROD_DR/RHEL7/GROUP_B/NG_Sat_0800_A</server-group-name>
+					<master-cme-path>/NG_Runs/PROD_DR/RHEL7/Week4/NG_Sat_0800_A/RHEL_7</master-cme-path>
+					<schedule-start-day>Sat</schedule-start-day>
+					<schedule-start-time>08:00:00</schedule-start-time>
+					<change-Template></change-Template>
+					<bl-user-id>BLAdmin</bl-user-id>
+					<change-id></change-id>
+					<task-id></task-id>
+					<change-type>2</change-type>
+					<approval-type>1</approval-type>
+					<impact-id>3</impact-id>
+					<risk-level>2</risk-level>
+					<comments>My comment CERT_NR_0800A</comments>
+				</patch-slot>
+		</environment>
+	</zone>
+</zones>
